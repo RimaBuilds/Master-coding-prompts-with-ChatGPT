@@ -22,8 +22,22 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 16. Sharing long code or multiple files and asking it to keep track and note
 
 ### 1. Dealing with Truncated Code
-When ChatGPT generates a code snippet that is too long, the output may be truncated. To prevent this, you can:
+
+Problem: The generated code is too long and gets cut off, and when asking ChatGPT to continue from where it stopped, it starts over instead of continuing the code.
+To prevent this, you can either:
 
 Break down the prompt into smaller, more focused tasks.
 Explicitly ask ChatGPT to provide a concise solution.
 Increase the max_tokens parameter, but be cautious about potential performance issues.
+
+**Perfect Prompt:**
+
+'''
+ChatGPT, your answer got truncated. please continue the previously generated code without repeating any part of it. The last part of the previous code snippet was:
+
+<Insert the last few lines of the generated code here>
+
+Continue generating the remaining code from this point onwards, ensuring that the solution picks up where it left off and does not start over.
+'''
+
+
