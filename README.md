@@ -4,7 +4,7 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 
 ## Table of Contents
 
-1. Dealing with truncated code
+1.  [Dealing with truncated code](#1-dealing-with-truncated-code)
 2. Ensuring generated code is in code block format
 3. Handling unfamiliar libraries and frameworks
 4. Providing specific constraints and requirements
@@ -21,23 +21,19 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 15. Encouraging diverse solutions
 16. Sharing long code or multiple files and asking it to keep track and note
 
-### 1. Dealing with Truncated Code
+## 1. Dealing with Truncated Code
+<a name="1-dealing-with-truncated-code"></a>
+**Problem:** The generated code is too long and gets cut off, and when asking ChatGPT to continue from where it stopped, it starts over instead of continuing the code. To prevent this, you can either:
 
-Problem: The generated code is too long and gets cut off, and when asking ChatGPT to continue from where it stopped, it starts over instead of continuing the code.
-To prevent this, you can either:
-
-Break down the prompt into smaller, more focused tasks.
-Explicitly ask ChatGPT to provide a concise solution.
-Increase the max_tokens parameter, but be cautious about potential performance issues.
+- Break down the prompt into smaller, more focused tasks.
+- Explicitly ask ChatGPT to provide a concise solution.
+- Increase the max_tokens parameter, but be cautious about potential performance issues.
 
 **Perfect Prompt:**
 
-'''
-ChatGPT, your answer got truncated. please continue the previously generated code without repeating any part of it. The last part of the previous code snippet was:
+```markdown
+ChatGPT, your answer got truncated. Please continue the previously generated code without repeating any part of it. The last part of the previous code snippet was:
 
 <Insert the last few lines of the generated code here>
 
-Continue generating the remaining code from this point onwards, ensuring that the solution picks up where it left off and does not start over.
-'''
-
-
+Continue generating the remaining code from this point onwards, ensuring that the solution picks up where it left off and does not start over.'''
