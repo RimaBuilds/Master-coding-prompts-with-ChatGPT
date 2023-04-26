@@ -5,7 +5,7 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 ## Table of Contents
 
 1.  [Dealing with truncated code](#1-dealing-with-truncated-code)
-2. Ensuring generated code is in code block format
+2. [Ensuring generated code is in code block format] (#2-ensuring-generated-code-is-in-code-block-format)
 3. Handling unfamiliar libraries and frameworks
 4. Providing specific constraints and requirements
 5. Defensive programming prompt and error handling
@@ -37,3 +37,6 @@ ChatGPT, your answer got truncated. Please continue the previously generated cod
 <Insert the last few lines of the generated code here>
 
 Continue generating the remaining code from this point onwards, ensuring that the solution picks up where it left off and does not start over.'''
+  
+## 2. Ensuring generated code is in code block format
+<a name="#2-ensuring-generated-code-is-in-code-block-format"></a>  
