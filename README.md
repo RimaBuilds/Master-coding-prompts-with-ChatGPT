@@ -2,7 +2,8 @@
 
 This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. .
 
-## Table of Contents /n
+## Table of Contents
+
 1. Dealing with truncated code
 2. Ensuring generated code is in code block format
 3. Handling unfamiliar libraries and frameworks
