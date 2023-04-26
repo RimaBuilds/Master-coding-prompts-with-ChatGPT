@@ -22,7 +22,7 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 17. Encouraging diverse solutions
 18. Sharing long code or multiple files and asking it to keep track and note
 
-### Dealing with Truncated Code
+### 1. Dealing with Truncated Code
 When ChatGPT generates a code snippet that is too long, the output may be truncated. To prevent this, you can:
 
 Break down the prompt into smaller, more focused tasks.
