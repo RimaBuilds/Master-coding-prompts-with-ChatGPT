@@ -12,15 +12,14 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 6. Providing project dictionary and prerequisite information
 7. Omitting imports in generated code
 8. Writing only suggested changes in code
-9. Adding error handling and defensive programming
-10. Redacting similar parts of code while keeping key headers and functions
-11. Adding comments in code to refer to specific parts
-12. Prompting ChatGPT to acclimate to updated libraries and documentation
-13. Handling custom functions and methods
-15. Writing efficient and concise code
-16. Providing snippet of database or dataset structure
-17. Encouraging diverse solutions
-18. Sharing long code or multiple files and asking it to keep track and note
+9. Redacting similar parts of code while keeping key headers and functions
+10. Adding comments in code to refer to specific parts
+11. Prompting ChatGPT to acclimate to updated libraries and documentation
+12. Handling custom functions and methods
+13. Writing efficient and concise code
+14. Providing snippet of database or dataset structure
+15. Encouraging diverse solutions
+16. Sharing long code or multiple files and asking it to keep track and note
 
 ### 1. Dealing with Truncated Code
 When ChatGPT generates a code snippet that is too long, the output may be truncated. To prevent this, you can:
