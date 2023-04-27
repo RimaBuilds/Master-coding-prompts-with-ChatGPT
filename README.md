@@ -1,6 +1,8 @@
 # PromptMaster: Improve-Code-Prompts-for-ChatGPT
 
-This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. .
+This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. 
+
+---
 
 ## 📚 Table of Contents
 - [Introduction](#introduction)
@@ -53,6 +55,8 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
 
 Welcome to the **PromptMaster** repository! The purpose of this repo is to provide developers with practical guidance on optimizing ChatGPT prompts for programming tasks. We aim to share tips, techniques, and best practices to help you avoid common pitfalls and improve your code generation experience with ChatGPT. This repository will also cover using ChatGPT with popular development tools and staying up-to-date with the AI model. We encourage collaboration and contributions from the developer community to make this resource as comprehensive and useful as possible.
 
+---
+
 # 2. Best practices for using ChatGPT in code generation
 
 ## 2.1. Best practices for using ChatGPT in code generation
@@ -70,6 +74,7 @@ Be aware that ChatGPT, like all AI models, is not perfect and might generate cod
 -Make use of the temperature and max_tokens settings to control the randomness and length of the generated code
 -Remember to review the generated code for any potential issues or biases before using it in your project.
 
+---
 
 # 3. Prompt-Master: Master Code Prompts for ChatGPT
 
