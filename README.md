@@ -3,13 +3,13 @@
 This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. .
 
 ## Table of Contents
-1. Introduction
-2. Best practices for using ChatGPT in code generation
-  2.1. Best practices for using ChatGPT in code generation
-  2.2. Leveraging the model's capabilities
-  2.3. Avoiding pitfalls and biases
-3. Prompt-Master: Master Code Prompts for ChatGPT
-  3.1. [Dealing with truncated code](#1-dealing-with-truncated-code)  
+1. Introduction  
+2. Best practices for using ChatGPT in code generation  
+  2.1. Best practices for using ChatGPT in code generation  
+  2.2. Leveraging the model's capabilities  
+  2.3. Avoiding pitfalls and biases  
+3. Prompt-Master: Master Code Prompts for ChatGPT  
+  3.1. [Dealing with truncated code](#1-dealing-with-truncated-code)   
   3.2. [Ensuring generated code is in code block format](#2-ensuring-generated-code-is-in-code-block-format)  
   3.3. [Handling unfamiliar libraries and frameworks](#3-handling-unfamiliar-libraries-and-frameworks)  
   3.4. [Providing specific constraints and requirements](#4-providing-specific-constraints-and-requirements)  
@@ -22,31 +22,31 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
   3.11. [Prompting ChatGPT to acclimate to updated libraries and documentation](#11-prompting-chatgpt-to-acclimate-to-updated-libraries-and-documentation)  
   3.12. [Handling custom functions and methods](#12-handling-custom-functions-and-methods)  
   3.13. [Writing efficient and concise code](#13-writing-efficient-and-concise-code)  
-  3.14. [Providing snippet of database or dataset structure]  
-  3.15. [Encouraging diverse solutions] 
-  3.16. [Sharing long code or multiple files and asking it to keep track and note]  
-4. Using ChatGPT with popular development tools 
-   4.1. IDEs
-       - Visual Studio Code
-       - PyCharm
-       - Sublime Text
-       - Atom
-       - IntelliJ IDEA
-       - Eclipse
-   4.2. Version control systems
-       - Git
-       - Mercurial
-       - Subversion
-   4.3. Continuous Integration and Deployment (CI/CD) systems
-       - Jenkins
-       - GitLab CI/CD
-       - GitHub Actions
-       - CircleCI
-       - Travis CI
-5. Staying up-to-date with ChatGPT
-   5.1. Monitoring updates and new releases
-   5.2. Adjusting to changes in the AI model
-6. Conclusion: feel free to send pull requests
+  3.14. [Providing snippet of database or dataset structure]   
+  3.15. [Encouraging diverse solutions]   
+  3.16. [Sharing long code or multiple files and asking it to keep track and note]    
+4. Using ChatGPT with popular development tools   
+   4.1. IDEs  
+       - Visual Studio Code 
+       - PyCharm  
+       - Sublime Text 
+       - Atom 
+       - IntelliJ IDEA  
+       - Eclipse  
+   4.2. Version control systems 
+       - Git  
+       - Mercurial  
+       - Subversion 
+   4.3. Continuous Integration and Deployment (CI/CD) systems 
+       - Jenkins  
+       - GitLab CI/CD 
+       - GitHub Actions 
+       - CircleCI 
+       - Travis CI  
+5. Staying up-to-date with ChatGPT  
+   5.1. Monitoring updates and new releases 
+   5.2. Adjusting to changes in the AI model  
+6. Conclusion: feel free to send pull requests  
 
 
 # 1. Introduction
