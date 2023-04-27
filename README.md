@@ -3,41 +3,41 @@
 This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. .
 
 ## Table of Contents
-1. Introduction  
-2. Best practices for using ChatGPT in code generation  
-  2.1. Best practices for using ChatGPT in code generation  
-  2.2. Leveraging the model's capabilities  
-  2.3. Avoiding pitfalls and biases  
-3. Prompt-Master: Master Code Prompts for ChatGPT  
-  3.1. [Dealing with truncated code](#1-dealing-with-truncated-code)   
-  3.2. [Ensuring generated code is in code block format](#2-ensuring-generated-code-is-in-code-block-format)  
-  3.3. [Handling unfamiliar libraries and frameworks](#3-handling-unfamiliar-libraries-and-frameworks)  
-  3.4. [Providing specific constraints and requirements](#4-providing-specific-constraints-and-requirements)  
-  3.5. [Defensive programming prompt and error handling](#5-defensive-programming-prompt-and-error-handling)  
-  3.6. [Providing project dictionary and prerequisite information](#6-providing-project-dictionary-and-prerequisite-information)  
-  3.7. [Omitting imports in generated code](#7-omitting-imports-in-generated-code)  
-  3.8. [Writing only suggested changes in code](#8-writing-only-suggested-changes-in-code)  
-  3.9. [Redacting similar parts of code while keeping key headers and functions](#9-redacting-similar-parts-of-code-while-keeping-key-headers-and-functions)  
-  3.10. [Adding comments in code to refer to specific parts](#10-adding-comments-in-code-to-refer-to-specific-parts)  
-  3.11. [Prompting ChatGPT to acclimate to updated libraries and documentation](#11-prompting-chatgpt-to-acclimate-to-updated-libraries-and-documentation)  
-  3.12. [Handling custom functions and methods](#12-handling-custom-functions-and-methods)  
-  3.13. [Writing efficient and concise code](#13-writing-efficient-and-concise-code)  
-  3.14. [Providing snippet of database or dataset structure]   
-  3.15. [Encouraging diverse solutions]   
-  3.16. [Sharing long code or multiple files and asking it to keep track and note]    
-4. Using ChatGPT with popular development tools   
-   4.1. IDEs  
+- [Introduction](#introduction)
+- [Best practices for using ChatGPT in code generation](#best-practices-for-using-chatgpt-in-code-generation)
+  - [2.1. Best practices for using ChatGPT in code generation](#21-best-practices-for-using-chatgpt-in-code-generation)
+  - [2.2. Leveraging the model's capabilities](#22-leveraging-the-models-capabilities)
+  - [2.3. Avoiding pitfalls and biases](#23-avoiding-pitfalls-and-biases)
+- [Prompt-Master: Master Code Prompts for ChatGPT](#prompt-master-master-code-prompts-for-chatgpt)
+  - [3.1. Dealing with truncated code](#31-dealing-with-truncated-code)
+  - [3.2. Ensuring generated code is in code block format](#32-ensuring-generated-code-is-in-code-block-format)
+  - [3.3. Handling unfamiliar libraries and frameworks](#33-handling-unfamiliar-libraries-and-frameworks)
+  - [3.4. Providing specific constraints and requirements](#34-providing-specific-constraints-and-requirements)
+  - [3.5. Defensive programming prompt and error handling](#35-defensive-programming-prompt-and-error-handling)
+  - [3.6. Providing project dictionary and prerequisite information](#36-providing-project-dictionary-and-prerequisite-information)
+  - [3.7. Omitting imports in generated code](#37-omitting-imports-in-generated-code)
+  - [3.8. Writing only suggested changes in code](#38-writing-only-suggested-changes-in-code)
+  - [3.9. Redacting similar parts of code while keeping key headers and functions](#39-redacting-similar-parts-of-code-while-keeping-key-headers-and-functions)
+  - [3.10. Adding comments in code to refer to specific parts](#310-adding-comments-in-code-to-refer-to-specific-parts)
+  - [3.11. Prompting ChatGPT to acclimate to updated libraries and documentation](#311-prompting-chatgpt-to-acclimate-to-updated-libraries-and-documentation)
+  - [3.12. Handling custom functions and methods](#312-handling-custom-functions-and-methods)
+  - [3.13. Writing efficient and concise code](#313-writing-efficient-and-concise-code)
+  - [3.14. Providing snippet of database or dataset structure](#314-providing-snippet-of-database-or-dataset-structure)
+  - [3.15. Encouraging diverse solutions](#315-encouraging-diverse-solutions)
+  - [3.16. Sharing long code or multiple files and asking it to keep track and note](#316-sharing-long-code-or-multiple-files-and-asking-it-to-keep-track-and-note)
+- [Using ChatGPT with popular development tools](#using-chatgpt-with-popular-development-tools)  
+  - [4.1. IDEs](#41-ides)
        - Visual Studio Code 
        - PyCharm  
        - Sublime Text 
        - Atom 
        - IntelliJ IDEA  
        - Eclipse  
-   4.2. Version control systems 
+  - [4.2. Version control systems](#42-version-control-systems)
        - Git  
        - Mercurial  
        - Subversion 
-   4.3. Continuous Integration and Deployment (CI/CD) systems 
+  - [4.3. Continuous Integration and Deployment (CI/CD) systems](#43-continuous-integration-and-deployment-ci/cd-systems)
        - Jenkins  
        - GitLab CI/CD 
        - GitHub Actions 
