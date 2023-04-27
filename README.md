@@ -2,7 +2,7 @@
 
 This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. .
 
-## Table of Contents
+## 📚 Table of Contents
 - [Introduction](#introduction)
 - [Best practices for using ChatGPT in code generation](#best-practices-for-using-chatgpt-in-code-generation)
   - [2.1. Best practices for using ChatGPT in code generation](#21-best-practices-for-using-chatgpt-in-code-generation)
@@ -43,11 +43,11 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
        - GitHub Actions 
        - CircleCI 
        - Travis CI  
-5. Staying up-to-date with ChatGPT  
-   5.1. Monitoring updates and new releases 
-   5.2. Adjusting to changes in the AI model  
-6. Conclusion: feel free to send pull requests  
-
+- [Staying up-to-date with ChatGPT](#staying-up-to-date-with-chatgpt)
+  - [5.1. Monitoring updates and new releases](#51-monitoring-updates-and-new-releases)
+  - [5.2. Adjusting to changes in the AI model](#52-adjusting-to-changes-in-the-ai-model)
+- [Conclusion: feel free to send pull requests](#conclusion-feel-free-to-send-pull-requests)
+---
 
 # 1. Introduction
 
