@@ -1,8 +1,7 @@
 # PromptMaster: Improve-Code-Prompts-for-ChatGPT
 
-This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. 
+This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. This guide is particulary for those using chat.openai.com, allowing them to optimize their 25 message per 3 hours for gpt4. 
 
----
 ---
 
 ## 📚 Table of Contents
