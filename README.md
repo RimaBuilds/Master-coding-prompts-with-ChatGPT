@@ -71,7 +71,8 @@ Be aware that ChatGPT, like all AI models, is not perfect and might generate cod
 **Perfect Prompt:**
 
 ```markdown
-ChatGPT, your answer got truncated. Please continue the previously generated code without repeating any part of it. The last part of the previous code snippet was:
+ChatGPT, your answer got truncated. Please continue the previously generated code without repeating any part of it.
+The last part of the previous code snippet was:
 
 <Insert the last few lines of the generated code here>
 
@@ -107,7 +108,8 @@ By explicitly requesting a code block, you are more likely to receive the genera
 **Perfect Prompt:**
 
 ```markdown
-ChatGPT, I need help with a problem using the <library/framework> version <version_number>, which is a <brief description of the library/framework>. Here is a code snippet or documentation that demonstrates its usage:
+ChatGPT, I need help with a problem using the <library/framework> version <version_number>, which is a <brief description of the library/framework>.
+Here is a code snippet or documentation that demonstrates its usage:
 
 <Insert code snippet or documentation link here>
 
@@ -120,7 +122,13 @@ By providing context and relevant information, you can increase the chances of C
 **Example Prompt:**
 
 ```markdown
-ChatGPT, I am working on a project that requires the use of the Dask library in Python. Dask is a library for parallel and distributed computing that allows processing of large datasets and provides support for computations on multi-dimensional arrays, data frames, and machine learning tasks. I need to perform parallel computation on large datasets efficiently. Specifically, I need to use Dask's DataFrame API to perform a groupby operation followed by aggregation. Here are snippets of the latest documentation and resources:
+ChatGPT, I am working on a project that requires the use of the Dask library in Python. 
+Dask is a library for parallel and distributed computing that allows processing of large datasets,
+and provides support for computations on multi-dimensional arrays, data frames, and machine learning tasks. 
+I need to perform parallel computation on large datasets efficiently. 
+Specifically, I need to use Dask's DataFrame API to perform a groupby operation followed by aggregation. 
+
+Here are snippets of the latest documentation and resources:
 
 - Dask documentation: https://docs.dask.org/en/latest/ <provide the snippets that has been updated and chatgpt might not be familair with>
 
@@ -169,7 +177,11 @@ Can you help me write a C++ program that meets these requirements?"
 
 **Perfect Prompt:**
 ```markdown
-ChatGPT, I need a Python script that <describes the task>. Please ensure that the code is robust and implements defensive programming techniques, such as input validation, error handling, and appropriate exception handling with print statements to output any errors that occur. The script should:
+ChatGPT, I need a Python script that <describes the task>. 
+Please ensure that the code is robust and implements defensive programming techniques, such as input validation, error handling,
+and appropriate exception handling with print statements to output any errors that occur. 
+
+The script should:
 
 <list the specific tasks or requirements of the script>
 ```
@@ -191,7 +203,9 @@ print("The processed data is:", result)
 ***After using the perfect prompt:***
 
 ```markdown
-ChatGPT, I need a Python script that takes user input for data, processes it using a custom 'data_processing_function', and prints the result. Please ensure that the code is robust and implements defensive programming techniques, such as input validation, error handling, and appropriate exception handling with print statements to output any errors that occur.
+ChatGPT, I need a Python script that takes user input for data, processes it using a custom 'data_processing_function', and prints the result.
+Please ensure that the code is robust and implements defensive programming techniques, 
+such as input validation, error handling, and appropriate exception handling with print statements to output any errors that occur.
 ```
 
 ***Generated code:***
@@ -262,7 +276,9 @@ Configure the bot to communicate with the Ethereum blockchain....
 ***Using the perfect prompt:***
 
 ```markdown
-ChatGPT, I am working on a project that involves creating a Telegram bot to track ERC20 tokens. I have already set up the required libraries (python-telegram-bot), created a bot on Telegram, and obtained an API token. My project's structure looks like this:
+ChatGPT, I am working on a project that involves creating a Telegram bot to track ERC20 tokens.
+I have already set up the required libraries (python-telegram-bot), created a bot on Telegram, and obtained an API token. 
+My project's structure looks like this:
 
 - main.py <share code>
 - config.py (API token stored here)
@@ -305,7 +321,9 @@ By providing the project dictionary and prerequisite information, ChatGPT genera
 **Perfect Prompt:**
 
 ```markdown
-ChatGPT, I am working on a project that involves <project description>. I have already imported all the required libraries and dependencies in my project. Please help me with the following task, but do not include any import statements in the generated code:
+ChatGPT, I am working on a project that involves <project description>. 
+I have already imported all the required libraries and dependencies in my project. 
+Please help me with the following task, but do not include any import statements in the generated code:
 
 <Insert task description here>
  ```
@@ -321,7 +339,8 @@ ChatGPT, I am working on a project that involves <project description>. I have a
 **Perfect Prompt:**
 
 ```markdown
-ChatGPT, I have a piece of code that I think can be improved or modified in some way. I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
+ChatGPT, I have a piece of code that I think can be improved or modified in some way. 
+I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
 
 <Insert the specific part(s) of your code here>
 
@@ -336,11 +355,13 @@ Please provide a high-level description of the changes you suggest, without rewr
 **Perfect Prompt:**
 
 ```markdown
-ChatGPT, I have a piece of code that I think can be improved or modified in some way. I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
+ChatGPT, I have a piece of code that I think can be improved or modified in some way. 
+I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
 
 <Insert the specific part(s) of your code here>
 
-Please generate only the edited sections of the code while keeping the original headers and functions intact. Also, indicate the placement of the edited sections by specifying after which line and before which line the changes should be inserted in the existing code.
+Please generate only the edited sections of the code while keeping the original headers and functions intact. 
+Also, indicate the placement of the edited sections by specifying after which line and before which line the changes should be inserted in the existing code.
 ```
 
 **Example (before):**
@@ -361,13 +382,15 @@ pass
 ***Using the perfect prompt:***
 
 ```markdown
-ChatGPT, I have a piece of code that I think can be improved or modified in some way. I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
+ChatGPT, I have a piece of code that I think can be improved or modified in some way. 
+I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
 
 def process_data(data):
 # Process the data
 pass
 
-Please generate only the edited sections of the code while keeping the original headers and functions intact. Also, indicate the placement of the edited sections by specifying after which line and before which line the changes should be inserted in the existing code.
+Please generate only the edited sections of the code while keeping the original headers and functions intact. 
+Also, indicate the placement of the edited sections by specifying after which line and before which line the changes should be inserted in the existing code.
 ```
 ***Generated code (After):***
 
@@ -387,7 +410,8 @@ By using the perfect prompt, ChatGPT generates only the edited sections of the c
 
 **Problem:** When working with long and complex code, it can be difficult to quickly locate and refer to specific sections. Adding comments and dividing the code into sections can help improve navigation and make it easier to refer to certain parts when asking ChatGPT for assistance.
 
-Use comments to divide your code into sections, labeling each part with a descriptive identifier (e.g., #Part 1, #Part 2, etc.). When asking ChatGPT for help, you can directly refer to the specific part by its label, making it easier for both you and ChatGPT to focus on the relevant section.
+-Use comments to divide your code into sections, labeling each part with a descriptive identifier (e.g., #Part 1, #Part 2, etc.)
+-When asking ChatGPT for help, you can directly refer to the specific part by its label, making it easier for both you and ChatGPT to focus on the relevant section.
 
 **Perfect Prompt:**
 
@@ -410,12 +434,14 @@ Please provide your suggestions or assistance with reference to the specified pa
 
 **Problem:** ChatGPT's knowledge is limited to information up to September 2021, which means it may not be aware of updates or changes to libraries that have occurred since then. When seeking help with a new library or an updated version, it's important to inform ChatGPT of the situation and provide relevant code and documentation snippets.
 
-So you need to Clearly state that you are using a library or a specific version that has been updated beyond ChatGPT's knowledge cutoff. Share your code and include pertinent documentation snippets to updated resources to help ChatGPT understand the context and provide more accurate assistance.
+-Clearly state that you are using a library or a specific version that has been updated beyond ChatGPT's knowledge cutoff. 
+-Share your code and include pertinent documentation snippets to updated resources to help ChatGPT understand the context and provide more accurate assistance.
 
 **Perfect Prompt:**
 
 ```markdown
-ChatGPT, I am working with a library (or a specific version of a library) that has been updated since your knowledge cutoff in September 2021. I understand that you may not be aware of the changes, so I will provide you with the relevant code and some documentation snippets (or links to updated resources) to help you assist me.
+ChatGPT, I am working with a library (or a specific version of a library) that has been updated since your knowledge cutoff in September 2021. 
+I understand that you may not be aware of the changes, so I will provide you with the relevant code and some documentation snippets to help you assist me.
 
 Here's my code:
 
@@ -433,12 +459,14 @@ Considering the provided code and documentation, could you please help me with t
 
 **Problem:** ChatGPT may not be familiar with user-defined functions or methods, making it difficult to understand the context when discussing code.
 
-Provide details about the custom functions or methods, such as their purpose, inputs, outputs, and any relevant implementation details. This will help ChatGPT provide better assistance and recommendations.
+-Provide details about the custom functions or methods, such as their purpose, inputs, outputs, and any relevant implementation details. This will help ChatGPT provide better assistance and recommendations.
 
 **Perfect Prompt:**
 
 ```markdown
-I have a custom function called function_name(arguments), which performs a specific task. The function takes these arguments: arg1 (type), arg2 (type), and so on. It returns the result of the operation as a specific type. Can you suggest improvements or potential issues with this function?
+I have a custom function called function_name(arguments), which performs a specific task. 
+The function takes these arguments: arg1 (type), arg2 (type), and so on. It returns the result of the operation as a specific type. 
+Can you suggest improvements or potential issues with this function?
 ```
 
 ## 3.13. Writing efficient and concise code
@@ -446,15 +474,16 @@ I have a custom function called function_name(arguments), which performs a speci
 
 **Problem**  Users may want help optimizing their code or making it more concise.
 
-Ask ChatGPT for suggestions on how to improve the efficiency or conciseness of your code, and provide any specific concerns or constraints you have.
+-Ask ChatGPT for suggestions on how to improve the efficiency or conciseness of your code, and provide any specific concerns or constraints you have.
 
 **Perfect Prompt:**
 
 ```markdown
-I have a piece of code that performs a specific task, but I'd like to make it more efficient or concise. Here's my current implementation:
+I have a piece of code that performs a specific task, but I'd like to make it more efficient or concise. 
+Here's my current implementation:
 
 def function_name(arguments):
-    # Your code here
+    < Your code here >
 Can you suggest an alternative way to implement this functionality?
 ```
 
@@ -463,12 +492,15 @@ Can you suggest an alternative way to implement this functionality?
 
 **Problem:** ChatGPT may not have access to your specific database or dataset structure, which can hinder its ability to provide relevant guidance.
 
-Share a snippet of your database or dataset structure, including information on tables, columns, data types, and relationships between tables or data points, to help ChatGPT better understand your query and provide appropriate guidance. Use the generic prompt example as a starting point and tailor it to your specific situation.
+-Share a snippet of your database or dataset structure, including information on tables, columns, data types, and relationships between tables or data points, to help ChatGPT better understand your query and provide appropriate guidance. 
+-Use the generic prompt example as a starting point and tailor it to your specific situation.
 
 **Perfect Prompt:** 
 
 ```markdown
-I'm working with a database or dataset that has the following structure: (provide information on tables, columns, data types, and relationships). Can you help me with a query or data manipulation task related to this structure?
+I'm working with a database or dataset that has the following structure: 
+(provide information on tables, columns, data types, and relationships). 
+Can you help me with a query or data manipulation task related to this structure?
 
 heres the first 10 rows in my dataset_1.csv 
 ... paste here
@@ -493,7 +525,8 @@ customers:
 2, Bob, bob@example.com
 3, Carol, carol@example.com
 
-I want to retrieve a list of all orders with the customer's name and email. Can you help me write a SQL query for this task?
+I want to retrieve a list of all orders with the customer's name and email. 
+Can you help me write a SQL query for this task?
 ```
 
 ## 3.15. Encouraging diverse solutions
@@ -516,13 +549,17 @@ Here's my code:
 
 **Problem:** Users may need assistance with long code snippets or multiple files, which can be challenging to manage in a conversational format.
 
-Inform chatgpt that you will share multiple files or long files that will be sent across of more than 1 message. ask chatgpt to understand, keep note, and track all of the messages and state that you will inform it when you finish sharing and then ask your questions. ask it to respond back that it understands. share the code or files with ChatGPT and provide chatgpt with as many details on which files you are sharing and which parts. 
+-Inform chatgpt that you will share multiple files or long files that will be sent across of more than 1 message. 
+-Ask chatgpt to understand, keep note, and track all of the messages and state that you will inform it when you finish sharing and then ask your questions. 
+-Ask it to respond back that it understands. share the code or files with ChatGPT and provide chatgpt with as many details on which files you are sharing and which parts. 
 
 **Perfect Prompt:** 
 
 ```markdown
-
-I will be sharing multiple files or long files that span across more than one message. Please understand, keep note of, and track all the messages. I will inform you when I finish sharing the files, and then I will ask my questions. Please respond back to confirm that you understand.
+I will be sharing multiple files or long files that span across more than one message. 
+Please understand, keep note of, and track all the messages. 
+I will inform you when I finish sharing the files, and then I will ask my questions. 
+Please respond back that you understand.
 
 <Share the code or files with ChatGPT sequentially or as needed, providing as many details as possible about which files you are sharing and which parts they pertain to.>
 ```
@@ -541,6 +578,12 @@ I will be sharing multiple files or long files that span across more than one me
 
 ---
 
-- [Conclusion: feel free to send pull requests](#conclusion-feel-free-to-send-pull-requests)
-I hope this guide has been helpful in improving your experience with ChatGPT for code generation. As ChatGPT evolves, so will the best practices for using it. If you have any suggestions or feedback, feel free to send a pull request to this guide's GitHub repository. Happy coding and prompting!
+# 5. Conclusion: feel free to send pull requests
+<a name="conclusion-feel-free-to-send-pull-requests"></a>
+
+
+I hope this guide has been helpful in improving your experience with ChatGPT for code generation. 
+As ChatGPT evolves, so will the best practices for using it. 
+If you have any suggestions or feedback, feel free to send a pull request to this guide's GitHub repository. Happy coding and prompting!
+
 ---
