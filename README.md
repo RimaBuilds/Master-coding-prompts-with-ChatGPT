@@ -27,9 +27,10 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
   - [3.15. Encouraging diverse solutions](#315-encouraging-diverse-solutions)
   - [3.16. Sharing long code or multiple files and asking it to keep track and note](#316-sharing-long-code-or-multiple-files-and-asking-chatgpt-to-keep-track-and-note)
 - [Using ChatGPT with popular development tools](#using-chatgpt-with-popular-development-tools)  
-- [Staying up-to-date with ChatGPT](#staying-up-to-date-with-chatgpt)
-  - [4.1. Monitoring updates and new releases](#51-monitoring-updates-and-new-releases)
-  - [4.2. Adjusting to changes in the AI model](#52-adjusting-to-changes-in-the-ai-model)
+  - VSCode
+  - Jupyter notebook
+  - Sublime text
+  - intellij IDEA
 - [Conclusion: feel free to send pull requests](#conclusion-feel-free-to-send-pull-requests)
 ---
 
@@ -526,7 +527,9 @@ I will be sharing multiple files or long files that span across more than one me
 <Share the code or files with ChatGPT sequentially or as needed, providing as many details as possible about which files you are sharing and which parts they pertain to.>
 ```
 ---
- [4.1. IDEs](#41-ides)
+ # 4. Using ChatGPT with popular development tools 
+ <a name="using-chatgpt-with-popular-development-tools"></a>
+ 
 | IDE / Tool                                                                            | Extension / Plugin Name                                                                                             | Description                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <img src="https://camo.githubusercontent.com/3913c59c7057f9c9a7f79d63c9753930e69790c8f90fbb375a78686e96165d29/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f76697375616c73747564696f636f64652e737667" width="30" height="30"> Visual Studio Code | [ChatGPT Extension for VSCode](https://github.com/mpociot/chatgpt-vscode) (unofficial)                            | Allows you to use the unofficial ChatGPT API to generate natural language responses from OpenAI's ChatGPT within the editor.                                                 |
@@ -538,11 +541,6 @@ I will be sharing multiple files or long files that span across more than one me
 
 ---
 
-- [Staying up-to-date with ChatGPT](#staying-up-to-date-with-chatgpt)
-  - [5.1. Monitoring updates and new releases](#51-monitoring-updates-and-new-releases)
-  - [5.2. Adjusting to changes in the AI model](#52-adjusting-to-changes-in-the-ai-model)
----
-
 - [Conclusion: feel free to send pull requests](#conclusion-feel-free-to-send-pull-requests)
-
+I hope this guide has been helpful in improving your experience with ChatGPT for code generation. As ChatGPT evolves, so will the best practices for using it. If you have any suggestions or feedback, feel free to send a pull request to this guide's GitHub repository. Happy coding and prompting!
 ---
