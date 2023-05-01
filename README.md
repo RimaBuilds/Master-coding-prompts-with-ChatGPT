@@ -1,6 +1,6 @@
 # PromptMaster: Improve-Code-Prompts-for-ChatGPT
 
-This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. This guide is particulary for those using chat.openai.com, allowing them to optimize their 25 message per 3 hours for gpt4. 
+This is a practical guide on how to optimize  ChatGPT prompts for programming. Here, I aimed to provide tips and techniques to help developers optimize their chatgpt prompts to avoid common problems and improve their code generation experience. This guide is particulary for those using chat.openai.com subscription, allowing them to optimize their 25 message per 3 hours for gpt4. 
 
 ---
 
@@ -26,7 +26,7 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
   - [3.13. Writing efficient and concise code](#313-writing-efficient-and-concise-code)
   - [3.14. Providing snippet of database or dataset structure](#314-providing-snippet-of-database-or-dataset-structure)
   - [3.15. Encouraging diverse solutions](#315-encouraging-diverse-solutions)
-  - [3.16. Sharing long code or multiple files and asking it to keep track and note](#316-sharing-long-code-or-multiple-files-and-asking-it-to-keep-track-and-note)
+  - [3.16. Sharing long code or multiple files and asking it to keep track and note](#316-sharing-long-code-or-multiple-files-and-asking-chatgpt-to-keep-track-and-note)
 - [Using ChatGPT with popular development tools](#using-chatgpt-with-popular-development-tools)  
   - [4.1. IDEs](#41-ides)
        - Visual Studio Code 
@@ -60,7 +60,6 @@ Welcome to the **PromptMaster** repository! The purpose of this repo is to provi
 # 2. Best practices for using ChatGPT in code generation
 
 ## 2.1. Best practices for using ChatGPT in code generation
-Properly formatting prompts
 To get the best results from ChatGPT, it's essential to format your prompts correctly. Ensure that your prompts are clear, concise, and specific. You can also use formatting techniques like putting instructions in a separate line or using bullet points to improve clarity.
 
 ## 2.2. Leveraging the model's capabilities
@@ -69,10 +68,10 @@ ChatGPT is a powerful AI model with a vast knowledge base. Make sure you leverag
 ## 2.3. Avoiding pitfalls and biases
 Be aware that ChatGPT, like all AI models, is not perfect and might generate code with potential pitfalls or biases. To avoid these issues, you can:
 
--Be explicit about your requirements in the prompt
--Request multiple code samples and compare them to find the best solution
--Make use of the temperature and max_tokens settings to control the randomness and length of the generated code
--Remember to review the generated code for any potential issues or biases before using it in your project.
+- Be explicit about your requirements in the prompt
+- Request multiple code samples and compare them to find the best solution 
+- Make use of the temperature and max_tokens settings to control the randomness and length of the generated code 
+- Remember to review the generated code for any potential issues or biases before using it in your project 
 
 ---
 
@@ -349,15 +348,198 @@ Please provide a high-level description of the changes you suggest, without rewr
 ## 3.9. Redacting similar parts of code while keeping key headers and functions
 <a name="9-redacting-similar-parts-of-code-while-keeping-key-headers-and-functions"></a>
 
+**Problem:** When asking ChatGPT for help with your code, you may want the generated code to include only the edited or improved sections while keeping the original headers and functions intact. Additionally, you might want ChatGPT to show the placement of the edited sections in your code (after which line and before which line). To achieve this, you can provide clear instructions to ChatGPT about the specific sections that need editing and the desired placement of those edits.
+
+**Perfect Prompt:**
+
+```markdown
+ChatGPT, I have a piece of code that I think can be improved or modified in some way. I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
+
+<Insert the specific part(s) of your code here>
+
+Please generate only the edited sections of the code while keeping the original headers and functions intact. Also, indicate the placement of the edited sections by specifying after which line and before which line the changes should be inserted in the existing code.
+```
+
+**Example (before):**
+```markdown
+def load_data(file_path):
+# Load data from a file
+pass
+
+def process_data(data):
+# Process the data
+pass
+
+def save_data(data, file_path):
+# Save the processed data to a file
+pass
+```
+
+***Using the perfect prompt:***
+
+```markdown
+ChatGPT, I have a piece of code that I think can be improved or modified in some way. I would like you to provide suggestions for changes or improvements to only the following specific part(s) of the code:
+
+def process_data(data):
+# Process the data
+pass
+
+Please generate only the edited sections of the code while keeping the original headers and functions intact. Also, indicate the placement of the edited sections by specifying after which line and before which line the changes should be inserted in the existing code.
+```
+***Generated code (After):***
+
+```markdown
+Edited section:
+Replace the pass statement in the process_data function with the following lines
+Place after line: 5
+Place before line: 6
+data = data.upper()
+result = data.strip()
+```
+
+By using the perfect prompt, ChatGPT generates only the edited sections of the code and provides clear instructions on where to place the changes within the existing code.
 
 ## 3.10. Adding comments in code to refer to specific parts
 <a name="10-adding-comments-in-code-to-refer-to-specific-parts"></a>
 
+**Problem:** When working with long and complex code, it can be difficult to quickly locate and refer to specific sections. Adding comments and dividing the code into sections can help improve navigation and make it easier to refer to certain parts when asking ChatGPT for assistance.
+
+Use comments to divide your code into sections, labeling each part with a descriptive identifier (e.g., #Part 1, #Part 2, etc.). When asking ChatGPT for help, you can directly refer to the specific part by its label, making it easier for both you and ChatGPT to focus on the relevant section.
+
+**Perfect Prompt:**
+
+```markdown
+ChatGPT, I have a piece of code that is divided into sections using comments. Here is a brief overview of the sections:
+
+#Part 1: <Description of Part 1>
+#Part 2: <Description of Part 2>
+...
+#Part N: <Description of Part N>
+I would like you to provide suggestions or assistance for the following part(s) of the code:
+
+<Specify which part(s) you want ChatGPT to focus on>
+
+Please provide your suggestions or assistance with reference to the specified part(s) without rewriting the whole code from the beginning.
+```
+
 ## 3.11. Prompting ChatGPT to acclimate to updated libraries and documentation
 <a name="11-prompting-chatgpt-to-acclimate-to-updated-libraries-and-documentation"></a>
+
+**Problem:** ChatGPT's knowledge is limited to information up to September 2021, which means it may not be aware of updates or changes to libraries that have occurred since then. When seeking help with a new library or an updated version, it's important to inform ChatGPT of the situation and provide relevant code and documentation snippets.
+
+So you need to Clearly state that you are using a library or a specific version that has been updated beyond ChatGPT's knowledge cutoff. Share your code and include pertinent documentation snippets to updated resources to help ChatGPT understand the context and provide more accurate assistance.
+
+**Perfect Prompt:**
+
+```markdown
+ChatGPT, I am working with a library (or a specific version of a library) that has been updated since your knowledge cutoff in September 2021. I understand that you may not be aware of the changes, so I will provide you with the relevant code and some documentation snippets (or links to updated resources) to help you assist me.
+
+Here's my code:
+
+<Your code here>
+Here are the documentation snippets related to the library or the specific version I am using:
+
+<Documentation snippet>
+Considering the provided code and documentation, could you please help me with the following issue(s) or question(s):
+
+<Specify your issue(s) or question(s)>
+```
 
 ## 3.12. Handling custom functions and methods
 <a name="12-handling-custom-functions-and-methods"></a>
 
+**Problem:** ChatGPT may not be familiar with user-defined functions or methods, making it difficult to understand the context when discussing code.
+
+Provide details about the custom functions or methods, such as their purpose, inputs, outputs, and any relevant implementation details. This will help ChatGPT provide better assistance and recommendations.
+
+**Perfect Prompt:**
+
+```markdown
+I have a custom function called function_name(arguments), which performs a specific task. The function takes these arguments: arg1 (type), arg2 (type), and so on. It returns the result of the operation as a specific type. Can you suggest improvements or potential issues with this function?
+```
+
 ## 3.13. Writing efficient and concise code
 <a name="13-writing-efficient-and-concise-code"></a>
+
+**Problem**  Users may want help optimizing their code or making it more concise.
+
+Ask ChatGPT for suggestions on how to improve the efficiency or conciseness of your code, and provide any specific concerns or constraints you have.
+
+**Perfect Prompt:**
+
+```markdown
+I have a piece of code that performs a specific task, but I'd like to make it more efficient or concise. Here's my current implementation:
+
+def function_name(arguments):
+    # Your code here
+Can you suggest an alternative way to implement this functionality?
+```
+
+## 3.14. Providing snippet of database or dataset structure
+<a name="14-providing-snippet-of-database-or-dataset-structure"></a>
+
+**Problem:** ChatGPT may not have access to your specific database or dataset structure, which can hinder its ability to provide relevant guidance.
+
+Share a snippet of your database or dataset structure, including information on tables, columns, data types, and relationships between tables or data points, to help ChatGPT better understand your query and provide appropriate guidance. Use the generic prompt example as a starting point and tailor it to your specific situation.
+
+**Perfect Prompt:** 
+
+```markdown
+I'm working with a database or dataset that has the following structure: (provide information on tables, columns, data types, and relationships). Can you help me with a query or data manipulation task related to this structure?
+
+heres the first 10 rows in my dataset_1.csv 
+... paste here
+```
+**Example:**
+
+```markdown
+I'm working with a database that has the following structure:
+
+Table orders: order_id (integer), customer_id (integer), order_date (date), total_amount (float)
+Table customers: customer_id (integer), customer_name (varchar), email (varchar)
+The tables are related by the customer_id field.
+
+Sample data (first 10 lines):
+orders:
+1, 1, 2023-01-01, 100.00
+2, 2, 2023-01-02, 150.00
+3, 3, 2023-01-02, 200.00
+
+customers:
+1, Alice, alice@example.com
+2, Bob, bob@example.com
+3, Carol, carol@example.com
+
+I want to retrieve a list of all orders with the customer's name and email. Can you help me write a SQL query for this task?
+```
+
+## 3.15. Encouraging diverse solutions
+<a name="15-encouraging-diverse-solutions"></a>
+
+**Problem:** sometimes chatgpt provides code answer that wont work and gets stuck and fixated on it. in this case ask chatgpt for an alternative solution or list of approaches to solve the  problem, allowing you to choose the best option based on your specific needs and constraints.
+
+**Perfect Prompt:** 
+
+```markdown
+I need help solving a specific problem in my code, but I'm looking for multiple alternative solutions or approaches. 
+Can you provide a list of different ways to solve this problem, considering my specific needs and constraints?
+Here's my code:
+
+<Your code here>
+```
+
+## 3.16. Sharing long code or multiple files and asking ChatGPT to keep track and note
+<a name="16-sharing-long-code-or-multiple-files-and-asking-chatgpt-to-keep-track-and-note"></a>
+
+**Problem:** Users may need assistance with long code snippets or multiple files, which can be challenging to manage in a conversational format.
+
+Inform chatgpt that you will share multiple files or long files that will be sent across of more than 1 message. ask chatgpt to understand, keep note, and track all of the messages and state that you will inform it when you finish sharing and then ask your questions. ask it to respond back that it understands. share the code or files with ChatGPT and provide chatgpt with as many details on which files you are sharing and which parts. 
+
+**Perfect Prompt:** 
+
+```markdown
+
+I will be sharing multiple files or long files that span across more than one message. Please understand, keep note of, and track all the messages. I will inform you when I finish sharing the files, and then I will ask my questions. Please respond back to confirm that you understand.
+
+<Share the code or files with ChatGPT sequentially or as needed, providing as many details as possible about which files you are sharing and which parts they pertain to.>
+```
