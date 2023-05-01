@@ -29,22 +29,8 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
   - [3.16. Sharing long code or multiple files and asking it to keep track and note](#316-sharing-long-code-or-multiple-files-and-asking-chatgpt-to-keep-track-and-note)
 - [Using ChatGPT with popular development tools](#using-chatgpt-with-popular-development-tools)  
   - [4.1. IDEs](#41-ides)
-       - Visual Studio Code 
-       - PyCharm  
-       - Sublime Text 
-       - Atom 
-       - IntelliJ IDEA  
-       - Eclipse  
   - [4.2. Version control systems](#42-version-control-systems)
-       - Git  
-       - Mercurial  
-       - Subversion 
   - [4.3. Continuous Integration and Deployment (CI/CD) systems](#43-continuous-integration-and-deployment-ci/cd-systems)
-       - Jenkins  
-       - GitLab CI/CD 
-       - GitHub Actions 
-       - CircleCI 
-       - Travis CI  
 - [Staying up-to-date with ChatGPT](#staying-up-to-date-with-chatgpt)
   - [5.1. Monitoring updates and new releases](#51-monitoring-updates-and-new-releases)
   - [5.2. Adjusting to changes in the AI model](#52-adjusting-to-changes-in-the-ai-model)
@@ -543,3 +529,36 @@ I will be sharing multiple files or long files that span across more than one me
 
 <Share the code or files with ChatGPT sequentially or as needed, providing as many details as possible about which files you are sharing and which parts they pertain to.>
 ```
+---
+ [4.1. IDEs](#41-ides)
+| IDE / Tool                                                                            | Extension / Plugin Name                                                                                             | Description                                                                                                                                                                  |
+|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/openai/openai-cookbook/blob/main/examples/static/vscode.png?raw=true" width="30" height="30">  | [ChatGPT Extension for VSCode](https://github.com/mpociot/chatgpt-vscode) (unofficial)                            | Allows you to use the unofficial ChatGPT API to generate natural language responses from OpenAI's ChatGPT within the editor.                                                 |
+| <img src="https://github.com/openai/openai-cookbook/blob/main/examples/static/vscode.png?raw=true" width="30" height="30">  | [AI Genie](https://github.com/ai-genie/chatgpt-vscode)                                                             | Prompt OpenAI's GPT-4, GPT-3.5, GPT-3, and Codex models within Visual Studio Code.                                                                                            |
+| <img src="https://github.com/openai/openai-cookbook/blob/main/examples/static/vscode.png?raw=true" width="30" height="30"> | [TabNine](https://www.tabnine.com/)                                                                                | Although not ChatGPT, TabNine is a powerful AI-powered code completion tool.                                                                                                 |
+| <img src="https://github.com/openai/openai-cookbook/blob/main/examples/static/jupyter.png?raw=true" width="30" height="30"> | [Chat-GPT Jupyter Extension](https://github.com/jflam/chat-gpt-jupyter-extension)                                 | Integrates ChatGPT into Jupyter Notebook for code generation and suggestions.                                                                                                |
+| <img src="https://github.com/openai/openai-cookbook/blob/main/examples/static/sublime-text.png?raw=true" width="30" height="30">  | [Sublime Text ChatGPT](https://github.com/eusonlito/Sublime-Text-ChatGPT)                                          | A plugin that connects Sublime Text to ChatGPT for code generation and assistance.                                                                                           |
+| <img src="https://github.com/openai/openai-cookbook/blob/main/examples/static/intellij.png?raw=true" width="30" height="30"> | [ChatGPT IntelliJ Plugin](https://plugins.jetbrains.com/plugin/20603-chatgpt)                                      | Integrates ChatGPT into IntelliJ IDEA for code generation, autocompletion, and assistance.                                                                                   |
+
+
+
+  - [4.2. Version control systems](#42-version-control-systems)
+       - Git  
+       - Mercurial  
+       - Subversion 
+  - [4.3. Continuous Integration and Deployment (CI/CD) systems](#43-continuous-integration-and-deployment-ci/cd-systems)
+       - Jenkins  
+       - GitLab CI/CD 
+       - GitHub Actions 
+       - CircleCI 
+       - Travis CI  
+---
+
+- [Staying up-to-date with ChatGPT](#staying-up-to-date-with-chatgpt)
+  - [5.1. Monitoring updates and new releases](#51-monitoring-updates-and-new-releases)
+  - [5.2. Adjusting to changes in the AI model](#52-adjusting-to-changes-in-the-ai-model)
+---
+
+- [Conclusion: feel free to send pull requests](#conclusion-feel-free-to-send-pull-requests)
+
+---
