@@ -31,7 +31,7 @@ This is a practical guide on how to optimize  ChatGPT prompts for programming. H
   - Jupyter notebook
   - Sublime text
   - intellij IDEA
-- [Conclusion: feel free to send pull requests](#conclusion-feel-free-to-send-pull-requests)
+- [Conclusion: ](#conclusion)
 ---
 
 # 1. Introduction
@@ -578,12 +578,12 @@ Please respond back that you understand.
 
 ---
 
-# 5. Conclusion: feel free to send pull requests
-<a name="conclusion-feel-free-to-send-pull-requests"></a>
+# 5. Conclusion: 
+<a name="conclusion"></a>
 
 
 I hope this guide has been helpful in improving your experience with ChatGPT for code generation. 
 As ChatGPT evolves, so will the best practices for using it. 
-If you have any suggestions or feedback, feel free to send a pull request to this guide's GitHub repository. Happy coding and prompting!
+If you have any suggestions, contribution you want to add or feedback, feel free to send a pull request to this guide's GitHub repository. Happy coding and prompting! <3
 
 ---
